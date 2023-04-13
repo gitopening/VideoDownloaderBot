@@ -75,3 +75,33 @@ Download videos from various websites using this telegram bot
 - /download_json - To download from jsons
 - /download_link@bot_username & /download_json@bot_username - To use in groups
 
+
+
+https://github.com/DaruaraFriends/VideoDownloaderBot
+https://colab.research.google.com/github/DaruaraFriends/VideoDownloaderBot/blob/main/VideoDownloaderBot.ipynb#scrollTo=G7-1QZEdQXCT
+
+
+!apt install ffmpeg aria2
+!git clone https://github.com/DaruaraFriends/VideoDownloaderBot
+%cd VideoDownloaderBot
+
+!pip3 install -U pip
+!pip3 install -r ./requirements.txt
+
+
+%env API_ID=12345 
+# Get from https://my.telegram.org/apps
+%env API_HASH=abcdef
+# Get from https://my.telegram.org/apps
+%env BOT_TOKEN=123:abc 
+# Get from https://t.me/BotFather
+%env AUTH_USERS=123,456 
+# User ids of those who can use bot anywhere without limit
+%env GROUPS=123,456 
+# Chat ids where you wan't many to use the bot
+%env JSON_GROUPS=123,456 
+# Chat ids where you wan't many to use the bot to download from jsons
+%env THUMB=thumb.jpg 
+# Url of video thumbnail. Leave to use video's thumbnail
+%env NAME=Deshdeepak 
+# Name to send with video
